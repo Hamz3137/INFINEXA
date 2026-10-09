@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="INFINEXA makes coding and cybersecurity learning fun through interactive challenges." />
+  <title>INFINEXA | Cyber Learning Through Gamification</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">I</span><span>INFINEXA<span class="brand-dot">.</span><small>LEARN • PLAY • PROTECT</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+      <a href="#learn">Learn</a><a href="#challenges">Challenges</a><a href="#leaderboard">Leaderboard</a>
+      <button class="btn btn-small" id="loginBtn">Sign in</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> THE FUTURE OF CYBER LEARNING</div>
+        <h1>Level up your skills.<br /><span class="gradient-text">Defend the digital world.</span></h1>
+        <p class="hero-text">Learn coding and cybersecurity through bite-sized lessons, interactive quizzes, and safe hands-on challenges. Your next level starts here.</p>
+        <div class="hero-actions"><a class="btn" href="#learn">Start learning <span>↗</span></a><a class="btn btn-ghost" href="#challenges">Explore challenges</a></div>
+        <div class="social-proof"><div class="avatar-stack"><span>CY</span><span>AI</span><span>JS</span></div><span><b>Learn by doing</b><small>Build confidence one challenge at a time</small></span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="shield"><div class="shield-inner"><span class="shield-icon">⌁</span><span class="shield-check">✓</span></div></div>
+        <div class="float-card card-top"><span class="mini-icon green">✓</span><span><b>Threat detected</b><small>Practice environment secured</small></span></div>
+        <div class="float-card card-bottom"><span class="mini-icon purple">✦</span><span><b>+150 XP earned</b><small>You're on a learning streak</small></span></div>
+        <div class="code-chip">&lt;learn /&gt; <span>● ● ●</span></div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div><strong>03</strong><span>Learning paths</span></div><div><strong>12+</strong><span>Starter challenges</span></div><div><strong>∞</strong><span>Room to grow</span></div><div><strong>100%</strong><span>Practice-focused</span></div>
+    </section>
+
+    <section class="section" id="learn">
+      <div class="section-heading"><div><div class="eyebrow">YOUR LEARNING JOURNEY</div><h2>Choose your <span class="gradient-text">next level.</span></h2></div><p>Start with the basics, collect XP, and build skills that matter in the digital world.</p></div>
+      <div class="path-grid">
+        <article class="path-card"><div class="path-icon cyan">⌘</div><span class="tag">PATH 01</span><h3>Coding foundations</h3><p>Understand logic, variables, and the building blocks of code.</p><div class="progress-label"><span>Beginner friendly</span><span>4 lessons</span></div><div class="progress"><span style="width:22%"></span></div><button class="text-btn start-path" data-path="Coding foundations">Explore path <span>→</span></button></article>
+        <article class="path-card featured"><div class="featured-label">POPULAR</div><div class="path-icon purple">⌑</div><span class="tag">PATH 02</span><h3>Cybersecurity basics</h3><p>Spot common threats, protect accounts, and practice safer habits.</p><div class="progress-label"><span>Beginner friendly</span><span>6 lessons</span></div><div class="progress"><span style="width:38%"></span></div><button class="text-btn start-path" data-path="Cybersecurity basics">Explore path <span>→</span></button></article>
+        <article class="path-card"><div class="path-icon orange">⌁</div><span class="tag">PATH 03</span><h3>AI & digital safety</h3><p>Explore responsible AI, privacy, and security in connected systems.</p><div class="progress-label"><span>Beginner friendly</span><span>3 lessons</span></div><div class="progress"><span style="width:12%"></span></div><button class="text-btn start-path" data-path="AI & digital safety">Explore path <span>→</span></button></article>
+      </div>
+    </section>
+
+    <section class="challenge-section" id="challenges"><div class="section section-heading"><div><div class="eyebrow">PLAY TO LEARN</div><h2>Small challenges.<br /><span class="gradient-text">Big brain energy.</span></h2></div><p>Try a quick challenge, get instant feedback, and earn experience points. These are safe, educational simulations.</p></div>
+      <div class="section challenge-grid">
+        <article class="challenge-card"><div class="challenge-top"><span class="challenge-symbol">✉</span><span class="difficulty easy">EASY · 50 XP</span></div><h3>Spot the phishing</h3><p>Can you recognize the warning signs in a suspicious message?</p><button class="btn btn-outline quiz-launch" data-quiz="phishing">Start challenge <span>→</span></button></article>
+        <article class="challenge-card"><div class="challenge-top"><span class="challenge-symbol purple">▦</span><span class="difficulty medium">MEDIUM · 75 XP</span></div><h3>Password protector</h3><p>Choose habits that make your accounts harder to compromise.</p><button class="btn btn-outline quiz-launch" data-quiz="password">Start challenge <span>→</span></button></article>
+        <article class="challenge-card"><div class="challenge-top"><span class="challenge-symbol orange">⌘</span><span class="difficulty easy">EASY · 50 XP</span></div><h3>Code logic sprint</h3><p>Test your problem-solving skills with a beginner coding question.</p><button class="btn btn-outline quiz-launch" data-quiz="coding">Start challenge <span>→</span></button></article>
+      </div>
+    </section>
+
+    <section class="section progress-section">
+      <div class="progress-copy"><div class="eyebrow">YOUR PROGRESS</div><h2>Every expert<br />starts at <span class="gradient-text">level one.</span></h2><p>Complete challenges to earn XP. Your progress is saved in this browser on this device.</p><button class="btn" id="progressBtn">View my progress</button></div>
+      <div class="progress-panel"><div class="panel-header"><div><span class="panel-label">YOUR PROFILE</span><h3 id="playerName">Cyber Explorer</h3></div><div class="level-badge">LVL <b id="levelNum">01</b></div></div><div class="xp-row"><span>Experience points</span><b id="xpText">0 / 300 XP</b></div><div class="xp-bar"><span id="xpBar"></span></div><div class="panel-divider"></div><div class="achievement-title">Achievements</div><div class="achievements"><div class="achievement" id="achFirst"><span>✦</span><small>First steps</small></div><div class="achievement locked" id="achThree"><span>♜</span><small>Challenge x3</small></div><div class="achievement locked" id="achPro"><span>⬡</span><small>Cyber pro</small></div></div><p class="tiny-note">Complete challenges to unlock achievements.</p></div>
+    </section>
+
+    <section class="section leaderboard-section" id="leaderboard"><div class="section-heading"><div><div class="eyebrow">COMMUNITY SPIRIT</div><h2>Climb the <span class="gradient-text">leaderboard.</span></h2></div><p>Demo leaderboard with sample learner profiles. Your local XP is shown in your profile panel.</p></div>
+      <div class="leaderboard"><div class="leader-row header-row"><span>RANK</span><span>LEARNER</span><span>LEVEL</span><span>XP</span></div><div class="leader-row"><span class="rank gold">01</span><span class="learner"><i class="user-dot u1">A</i><b>Alex Morgan</b></span><span>08</span><strong>2,450</strong></div><div class="leader-row"><span class="rank silver">02</span><span class="learner"><i class="user-dot u2">S</i><b>Sam Rivera</b></span><span>06</span><strong>1,870</strong></div><div class="leader-row"><span class="rank bronze">03</span><span class="learner"><i class="user-dot u3">J</i><b>Jordan Lee</b></span><span>05</span><strong>1,520</strong></div><div class="leader-row"><span class="rank">04</span><span class="learner"><i class="user-dot you">Y</i><b>You (local profile)</b></span><span id="leaderLevel">01</span><strong id="leaderXp">0</strong></div></div>
+    </section>
+
+    <section class="cta section"><div class="cta-glow"></div><div class="eyebrow">READY PLAYER ONE?</div><h2>Make learning your<br /><span class="gradient-text">superpower.</span></h2><p>Build skills. Stay curious. Help create a safer digital world.</p><a class="btn" href="#learn">Start your journey <span>↗</span></a></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">I</span><span>INFINEXA<small>LEARN • PLAY • PROTECT</small></span></a><span>© <span id="year"></span> INFINEXA. Educational demo project.</span><a href="#home">Back to top ↑</a></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="eyebrow" id="modalEyebrow">QUICK CHALLENGE</div><h2 id="modalTitle">Challenge</h2><p id="modalQuestion"></p><div id="modalOptions" class="modal-options"></div><div id="modalFeedback" class="feedback" aria-live="polite"></div><button class="btn modal-next" id="modalDone" hidden>Continue</button></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
